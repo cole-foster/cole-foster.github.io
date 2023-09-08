@@ -36,11 +36,11 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#research">Research</a>
+                        <a class="nav-link" href="#publications">Publications</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div>
@@ -61,33 +61,37 @@
 
     <!-- about section-->
     <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
+        <div class="container">
+            <!-- <h1 class="text-center">About Me</h1> -->
             <div class="row mt-4">
                 <div class="col-lg-4">
-                    <img src="images/me.jpeg" class= "imageAboutPage" alt="">
+                    <img src="images/stevie-and-me.png" class= "imageAboutPage" style="width:80%" alt="">
                 </div>
-        
-                <div class="col-lg-8">
-                    <p> I am a PhD student at Brown University in the Laboratory of Engineering Man/Machine Systems
-                        (LEMS) under Professor Benjamin Kimia. My main area of research focuses on hierarchical 
-                        metric-space similarity search with an emphasis on maintaining search quality.
+                <div class="col-lg-6">
+                    <h1 class="text-center">About Me</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <p> I am a fourth-year PhD student at Brown University in Providence, RI, USA under Professor 
+                        Benjamin Kimia. I received my undergraduate degree at Roger Williams University in Bristol, RI, 
+                        majoring in Electrical Engineering and Applied Mathematics. My research focuses on hierarchical 
+                        approaches to proximity graph search and construction with an emphasis on exactness.
                     </p>
-                    <div class="row mt-3">
+                    <!-- <div class="row mt-3">
                         <div class="col-md-6">
                             <ul>
                                 <li>Name: Cole Foster</li>
                                 <li>Age: 25</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- research section-->
-    <section id="research">
+    <!-- <section id="research">
         <div class="container">
             <h1 class="text-center">Research</h1>
             <div class="row">
@@ -115,7 +119,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- publications section-->
     <section id="publications">
@@ -124,15 +128,46 @@
             <div class="row">
                 <div class="col-lg-4 mt-4">
                     <div class="card">
-                        <img class="card-img-top" src="images/graph-hierarchy.png" alt="Card image" style="width:100%">
+                        <img class="card-img-top" src="images/HHSP-Picture.png" alt="Card image" style="width:100%;height:15vh">
+                        <div class="card-body">
+                            <h4 class="card-title">Finding HSP Neighbors via an Exact, Hierarchical Approach
+                            </h4>
+                            <p class="card-text text-center"> Similarity Search and Applications 2023</p>
+                            <div class="text-center">
+                                <a href="https://www.sisap.org/2023/index.html"
+                                    class="btn btn-success">paper</a>
+                                <a href="https://github.com/cole-foster/HHSP"
+                                    class="btn btn-success">code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/HNSW-Picture.png" alt="Card image" style="width:100%;height:15vh">
+                        <div class="card-body">
+                            <h4 class="card-title">Computational Enhancements of HNSW Targeted to Very Large Datasets
+                            </h4>
+                            <p class="card-text text-center"> Similarity Search and Applications 2023</p>
+                            <div class="text-center">
+                                <a href="https://www.sisap.org/2023/index.html"
+                                    class="btn btn-success">paper</a>
+                                <a href="https://github.com/cole-foster/sisap-2023.git"
+                                    class="btn btn-success">code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top center" src="images/GRNG-Picture.png" alt="Card image" style="width:80%;height:15vh;margin-left:auto;margin-right: auto;">
                         <div class="card-body">
                             <h4 class="card-title">Generalized Relative Neighborhood Graph (GRNG) for Similarity Search
                             </h4>
-                            <p class="card-text">Scalable construction and search of the Relative Neighborhood Graph in
-                                Metric Spaces.</p>
+                            <p class="card-text text-center"> Similarity Search and Applications 2022</p>
                             <div class="text-center">
                                 <a href="https://link.springer.com/chapter/10.1007/978-3-031-17849-8_11"
-                                    class="btn btn-success">Link</a>
+                                    class="btn btn-success">paper</a>
                             </div>
                         </div>
                     </div>
@@ -140,14 +175,14 @@
             </div>
     </section>
 
-    <!-- publications section-->
-    <section id="blog">
+    <!-- publications section -->
+    <!-- <section id="blog">
         <div class="container mt-3">
             <h1 class="text-center">Blog</h1>
             <div class="row">
 
                 <!-- Blog: Creating a website -->
-                <div class="col-lg-4 mt-4">
+                <!-- <div class="col-lg-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="images/website.jpeg" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -159,10 +194,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Blog: Changing Front Brake Pads -->
-                <div class="col-lg-4 mt-4">
+                <!-- <div class="col-lg-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="images/brakes.jpeg" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -174,10 +209,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Blog: Using GPU -->
-                <div class="col-lg-4 mt-4">
+                <!-- <div class="col-lg-4 mt-4">
                     <div class="card">
                         <img class="card-img-top" src="images/h100-gpu.jpeg" alt="Card image" style="width:100%">
                         <div class="card-body">
@@ -190,16 +225,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
-    </section>
+            </div> -->
+    <!-- </section> -->
 
     <!-- footer section-->
     <footer id="footer">
         <div class="container-fluid">
             <!-- social media icons -->
             <div class="social-icons mt-4">
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/cole-foster" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a> -->
             </div>
         </div>
     </footer>
