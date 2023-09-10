@@ -1,1 +1,1 @@
-Welcome! Hosted at: [cole-foster.com](cole-foster.com)
+Welcome! Hosted at: [cole-foster.com](https://cole-foster.com)
