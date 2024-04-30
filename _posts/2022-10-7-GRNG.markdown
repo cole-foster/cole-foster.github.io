@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Generalized Relative Neighborhood Graph (GRNG) for Similarity Search"
+date:   2022-10-07 12:00:00 -0400
+categories: publication
+short: 
+image: assets/GRNG-Picture.png
+---
+
+<a href="https://link.springer.com/chapter/10.1007/978-3-031-17849-8_11" class="button">Conference Paper</a>
+<a href="https://github.com/cole-foster/HHSP.git" class="button">Code</a>
+<br>
+
+
+### Abstract
+Similarity search for information retrieval on a variety of datasets relies on a notion of neighborhood, frequently using binary relationships such as the kNN approach. We suggest, however, that the notion of a neighbor must recognize higher-order relationship, to capture neighbors in all directions. Proximity graphs, such as the Relative Neighbor Graphs (RNG), use trinary relationships which capture the notion of direction and have been successfully used in a number of applications. However, the current algorithms for computing the RNG, despite widespread use, are approximate and not scalable. This paper proposes a hierarchical approach and novel type of graph, the Generalized Relative Neighborhood Graph (GRNG) for use in a pivot layer that then guides the efficient and exact construction of the RNG of a set of exemplars. It also shows how to extend this to a multi-layer hierarchy which significantly improves over the state-of-the-art methods which can only construct an approximate RNG.
+
+
+> Foster, Cole, Berk Sevilmis, and Benjamin Kimia. "Generalized Relative Neighborhood Graph (GRNG) for Similarity Search." In International Conference on Similarity Search and Applications, pp. 133-149. Cham: Springer International Publishing, 2022.
