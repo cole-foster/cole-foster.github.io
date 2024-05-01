@@ -14,12 +14,12 @@ images:
   - image_path: /assets/stevie/stevie-monkey.jpeg
 ---
 
-{% include image-gallery.html folder="/assets/stevie/" %}
+<!-- {% include image-gallery.html folder="/assets/stevie/" %} -->
 
 
-<!-- <ul class="photo-gallery">
+<ul class="photo-gallery">
   {% for image in page.images %}
     <img src="{{ image.image_path }}" alt="dog" style="max-width: 200px; height: auto; border-radius: 10px;"/>
   {% endfor %}
-</ul> -->
+</ul> 
 
