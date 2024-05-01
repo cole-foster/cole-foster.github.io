@@ -14,12 +14,15 @@ images:
   - image_path: /assets/stevie/stevie-monkey.jpeg
 ---
 
-<!-- {% include image-gallery.html folder="/assets/stevie/" %} -->
 
 
-<ul class="photo-gallery">
+<ul id="gallery">
   {% for image in page.images %}
-    <img src="{{ image.image_path }}" alt="dog" style="max-width: 200px; height: auto; border-radius: 10px;"/>
+    <div class="card" style="height: auto; margin-bottom: 6px;" >
+      <a target="_blank" href="{{ image.image_path }}">
+        <img src="{{ image.image_path }}" alt="dog" style="border-radius: 10px;"/>
+      </a>
+    </div>
   {% endfor %}
 </ul> 
 

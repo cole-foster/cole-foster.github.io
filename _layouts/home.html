@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<link rel="stylesheet" href="/css/homepage.css">
 
 <div class="home">
   {%- if page.title -%}
@@ -12,12 +11,16 @@ layout: default
     <br>
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Publications" }}</h2>
+    <div class="card">
+      <div class="caption" style="padding: 0px;">
+        <h2 class="post-list-heading">{{ page.list_title | default: "Publications" }}</h2>
+      </div>
+    </div>
     <ul class="post-list">
       {%- for post in site.posts -%}
         {%- if post.categories contains "publication" -%}
             <li>
-                <div style="outline: 2px solid gray; outline-offset: 10px; border-radius: 5px">
+                <div class="card"> <div style="padding: 5px;">
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
                 <span class="post-meta">{{ post.date | date: date_format }}</span>
                 <h3>
@@ -27,7 +30,7 @@ layout: default
                 </h3>
                 {{ post.short }}
                 <img class="center" style="display:block; margin-left: auto; margin-right: auto; max-height: 200px;" src="{{ post.image }}">
-                </div>
+                </div></div>
             </li>
         {%- endif -%}
       {%- endfor -%}
