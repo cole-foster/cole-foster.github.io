@@ -18,7 +18,7 @@ layout: home
     <div></div>
 
     <div class="polaroid">
-        <img src="assets/stevie-and-me.png" alt="me and my dog" style="display: block; width: 100%; border-radius: 10px; ">
+        <img src="assets/stevie/stevie-and-me.png" alt="me and my dog" style="display: block; width: 100%; border-radius: 10px; ">
         <div class="caption"> My puppy, Stevie, after she dragged me along the Newport Cliff Walk.</div>
     </div>
 </div>
