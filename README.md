@@ -1,1 +1,1 @@
-Hey there! Hosted at [cole-foster.com](cole-foster.com)
+Hey there! Hosted at [cole-foster.com](https://cole-foster.com)
