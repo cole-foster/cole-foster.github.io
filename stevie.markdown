@@ -1,7 +1,7 @@
 ---
 # This type of file is for more tabs on the header. Just need a title
 layout: default
-title: Stevie
+title: 
 permalink: /stevie/
 images:
   - image_path: /assets/stevie/stevie-hood.jpeg

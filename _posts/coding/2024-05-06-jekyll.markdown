@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Jekyll + Github Pages for Markdown-Friendly Sites"
+date:   2024-06-01 11:00:00 -0400
+categories: coding
+usemathjax: true
+---
+
+#### Markdown
+
+#### Jekyll
+
+#### Github Pages
+

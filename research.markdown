@@ -1,22 +1,12 @@
 ---
+# This type of file is for more tabs on the header. Just need a title
 layout: default
+title: research
+permalink: /research/
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {{ content }}
-    <br>
-
-  {%- if site.posts.size > 0 -%}
-    <div class="card">
-      <div class="caption" style="padding: 0px;">
-        <h2 class="post-list-heading">{{ page.list_title | default: "Publications" }}</h2>
-      </div>
-    </div>
-    <ul class="post-list">
+<ul class="post-list">
       {%- for post in site.posts -%}
         {%- if post.categories contains "publications" -%}
             <li>
@@ -35,8 +25,3 @@ layout: default
         {%- endif -%}
       {%- endfor -%}
     </ul>
-
-    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p> -->
-  {%- endif -%}
-
-</div>
