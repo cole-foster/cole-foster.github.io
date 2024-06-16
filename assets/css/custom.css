@@ -62,7 +62,6 @@
 }
 
 
-
 div.card {
     width: 100%;
     background-color: white;
@@ -73,4 +72,46 @@ div.card {
 div.caption {
     text-align: center;
     padding: 5px;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Add this line to allow wrapping */
+}
+  
+.hero-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 2rem;
+}
+  
+.hero-text {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .hero-image {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
 }
