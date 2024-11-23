@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-    <link rel="stylesheet" href="/assets/css/custom.css">
-
   {%- include head.html -%}
-
-  <body>
-
+  
+  <!-- Body -->
+  <body style="background-color: #e1e4e8;">
     {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content" style="background-color: #c2cfc4;">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <main class="page-content" aria-label="Content">
+      {{ content }}
     </main>
 
     {%- include footer.html -%}

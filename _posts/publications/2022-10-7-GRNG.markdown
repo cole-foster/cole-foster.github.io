@@ -3,8 +3,8 @@ layout: post
 title:  "Generalized Relative Neighborhood Graph (GRNG) for Similarity Search"
 date:   2022-10-07 12:00:00 -0400
 categories: publications
-short: 
-image: /assets/GRNG-Picture.png
+description: 
+image: /assets/images/GRNG-Picture.png
 ---
 
 <a href="https://link.springer.com/chapter/10.1007/978-3-031-17849-8_11" class="button">Conference Paper</a>

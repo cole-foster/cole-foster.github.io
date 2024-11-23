@@ -3,7 +3,7 @@ layout: post
 title:  "What's Taking So Long? Code Profiling for Optimization"
 date: 2024-05-06 11:00:00 -0400
 modified:  2024-05-08 11:00:00 -0400
-categories: coding
+categories: coding writings
 usemathjax: true
 ---
 
