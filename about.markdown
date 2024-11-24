@@ -1,22 +1,10 @@
 ---
 # This type of file is for more tabs on the header. Just need a title
 layout: page
-title: about
 permalink: /about/
+title: about me
+image: /assets/images/sunset.jpeg
 ---
-<header class="masthead" style="background-image: url('/assets/images/sunset.jpeg')">
-  <div class="container position-relative px-4 px-lg-5">
-      <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-md-10 col-lg-8 col-xl-7">
-              <div class="site-heading">
-                  <h1> Cole Foster </h1>
-                  <span class="subheading">about me</span>
-              </div>
-          </div>
-      </div>
-  </div>
-</header>
-
 <div class="wrapper">
     <div class="modern-card" style="width: 100%;">
         <div class="card-body">
@@ -29,10 +17,11 @@ permalink: /about/
                 <div class="col-md-7">
                     <p>Welcome!</p>
                     <p>
-                        <b>Academically</b>, I'm a PhD Candidate at Brown University studying under Professor Kimia within the 
-                        Department of Electrical and Computer Engineering. I received my Masters of Science in Electrical and Computer 
-                        Engineering at Brown University in 2024. I received my undergraduate degree at Roger Williams University in Bristol, RI, USA 
-                        majoring in Electrical Engineering and Applied Mathematics.
+                        <b>Academically</b>, I'm a PhD Candidate at Brown University studying under Professor Kimia within 
+                        the Department of Electrical and Computer Engineering. I received my Masters of Science in 
+                        Electrical and Computer Engineering at Brown University in 2024. I received my undergraduate 
+                        degree in 2020 at Roger Williams University majoring in Electrical Engineering and Applied 
+                        Mathematics.
                     </p>
                 </div>
             </div>

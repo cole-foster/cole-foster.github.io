@@ -4,7 +4,7 @@ title:  "Computational Enhancements of HNSW Targeted to Very Large Datasets"
 date:   2023-10-11 12:00:00 -0400
 categories: publications
 description: Submission to the SISAP 2023 Indexing Challenge 
-image: /assets/images/HNSW-Picture.png
+image: /assets/images/research/HNSW-Picture.png
 ---
 
 <a href="https://link.springer.com/chapter/10.1007/978-3-031-46994-7_25" class="button">Conference Paper</a>
@@ -14,15 +14,6 @@ image: /assets/images/HNSW-Picture.png
 
 ### Abstract
 The Hierarchical Navigable Small World (HNSW) Graph is a graph-based approximate similarity search algorithm that achieves fast and accurate search through a hierarchical structure providing long-range and short-range links. The HNSW remains as a state-of-the-art method, as shown by this submission to the SISAP 2023 Indexing Challenge. This submission introduces a modification to the implementation of HNSW that avoids the cost of a batched construction and drastically reduces disk-space of the saved index when working with large datasets. Through the lens of this competition, this work provides a careful analysis of several important factors for high-performance applications, including the removal of unnecessary functionality, the use of SIMD vectorization for distance computations, and optimal utilization of cache through spatial locality and cache prefetching.
-
-<!-- #### SISAP 2023 Indexing Challenge
-
-#### What is HNSW?
-
-#### Beam Search
-![My Image](/assets/animation-beam-search.gif){:width="100%"} -->
-
-
 
 
 > Foster, Cole, and Benjamin Kimia. "Computational enhancements of HNSW targeted to very large datasets." In International Conference on Similarity Search and Applications, pp. 291-299. Cham: Springer Nature Switzerland, 2023.

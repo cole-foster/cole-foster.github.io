@@ -4,7 +4,7 @@ title:  "Finding HSP Neighbors via an Exact, Hierarchical Approach"
 date:   2023-10-11 12:00:00 -0400
 categories: publications
 description: 
-image: /assets/images/HHSP-Picture.png
+image: /assets/images/research/HHSP-Picture.png
 ---
 
 <a href="https://link.springer.com/chapter/10.1007/978-3-031-46994-7_1" class="button">Conference Paper</a>

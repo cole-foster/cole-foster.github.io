@@ -1,37 +1,59 @@
 ---
 layout: default
 ---
-<div class="wrapper">
-  {{ content }}
-</div>
 
-
-
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-  <div class="card" style="padding: 5px;">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        Created: {{ page.date | date: date_format }}
-        <br>
-        Last Modified: {{ page.modified | date: date_format }}
-      </time>
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+{%- if page.image -%}
+  <header class="masthead" style="background-image: url('{{ page.image }}')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <!-- <div class="site-heading">
+                    <h1> {{ page.title | escape }} </h1>
+                </div> -->
+            </div>
+        </div>
+    </div>
   </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+{%- else -%}
+<header class="masthead" style="background-image: url('/assets/images/sunset.jpeg')">
+  <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <!-- <div class="site-heading">
+                  <h1> {{ page.title | escape }} </h1>
+              </div> -->
+          </div>
+      </div>
   </div>
+</header>
+{%- endif -%}
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+<div class="wrapper">
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="card" style="padding: 5px;">
+
+    <header class="post-header">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p class="post-meta">
+        <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%B %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        {%- endif -%}</p>
+    </header>
+
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+
+    {%- if site.disqus.shortname -%}
+      {%- include disqus_comments.html -%}
+    {%- endif -%}
+
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  </div>
+  </article>
 </div>
-</article>
