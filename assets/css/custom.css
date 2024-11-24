@@ -1,33 +1,50 @@
-
 /* from chatgpt */
 .wrapper {
-    max-width: 1140px; /* Matches Bootstrap's container-lg */
-    margin-left: auto; /* Centers the container */
-    margin-right: auto; /* Centers the container */
-    padding-left: 15px; /* Default Bootstrap padding */
-    padding-right: 15px; /* Default Bootstrap padding */
+    max-width: 1140px;
+    /* Matches Bootstrap's container-lg */
+    margin-left: auto;
+    /* Centers the container */
+    margin-right: auto;
+    /* Centers the container */
+    padding-left: 15px;
+    /* Default Bootstrap padding */
+    padding-right: 15px;
+    /* Default Bootstrap padding */
 }
+
 .modern-card {
-    border: none; /* Remove default border */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+    border: none;
+    /* Remove default border */
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* Smooth hover effect */
     background-color: white;
     margin-bottom: 0.25rem;
 }
+
 .modern-card:hover {
-    transform: translateY(-1px); /* Lift the card */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+    transform: translateY(-1px);
+    /* Lift the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    /* Enhance shadow on hover */
 }
+
 .modern-card img {
-    border-top-left-radius: 15px; /* Round top corners */
+    border-top-left-radius: 15px;
+    /* Round top corners */
     border-top-right-radius: 15px;
 }
+
 .modern-card .card-body {
     padding: 20px;
 }
+
 .card-link {
-    text-decoration: none; /* Removes the underline from the link */
+    text-decoration: none;
+    /* Removes the underline from the link */
     color: inherit;
 }
 
@@ -39,35 +56,36 @@
     background: #f4f4f4;
     padding: 2rem 0;
     text-align: center;
-  }
-  
+}
+
 .hero-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; /* Add this line to allow wrapping */
+    flex-wrap: wrap;
+    /* Add this line to allow wrapping */
 }
-  
+
 .hero-image {
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin-right: 2rem;
 }
-  
+
 .hero-text {
     max-width: 600px;
 }
 
 @media (max-width: 768px) {
     .hero-content {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        text-align: center;
     }
-    
+
     .hero-image {
-      margin-right: 0;
-      margin-bottom: 1rem;
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
 }
 
@@ -76,50 +94,55 @@
     with help from https://css-tricks.com/seamless-responsive-photo-grid/ 
 */
 #gallery {
-    line-height: 6;       
-    -webkit-column-count: 5;    
-    -webkit-column-gap: 6px;    
+    line-height: 6;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 6px;
     -moz-column-count: 5;
     -moz-column-gap: 5px;
-    column-count: 5;   
-    column-gap: 6px;  
+    column-count: 5;
+    column-gap: 6px;
 }
-#gallery img {    
-    width: 100% !important;    
-    height: auto !important; 
-} 
-#gallery {    
-    display:inline-block;    
-    margin-right: auto;    
-    margin-left: auto; 
+
+#gallery img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+#gallery {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 @media (max-width: 1200px) {
     #gallery {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
     }
 }
+
 @media (max-width: 1000px) {
     #gallery {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
     }
 }
+
 @media (max-width: 800px) {
     #gallery {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
     }
 }
-@media (max-width: 300px) {
+
+@media (max-width: 200px) {
     #gallery {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
     }
 }
 
@@ -145,6 +168,7 @@ header.masthead {
     background-size: cover;
     background-attachment: scroll;
 }
+
 header.masthead:before {
     content: "";
     position: absolute;
@@ -155,20 +179,25 @@ header.masthead:before {
     background-color: #212529;
     opacity: 0.5;
 }
+
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
     color: #fff;
 }
+
 header.masthead .page-heading,
 header.masthead .site-heading {
     text-align: center;
 }
-header.masthead .page-heading h1, header.masthead .page-heading .h1,
+
+header.masthead .page-heading h1,
+header.masthead .page-heading .h1,
 header.masthead .site-heading h1,
 header.masthead .site-heading .h1 {
     font-size: 3rem;
 }
+
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
     font-size: 1.5rem;
@@ -178,46 +207,59 @@ header.masthead .site-heading .subheading {
     margin-top: 0.625rem;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+
+header.masthead .post-heading h1,
+header.masthead .post-heading .h1 {
     font-size: 2.25rem;
 }
+
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
     line-height: 1.1;
     display: block;
 }
+
 header.masthead .post-heading .subheading {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0.75rem 0 2rem;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 header.masthead .post-heading .meta {
     font-size: 1.25rem;
     font-weight: 300;
     font-style: italic;
     font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 header.masthead .post-heading .meta a {
     color: #fff;
 }
+
 @media (min-width: 992px) {
     header.masthead {
         padding-top: 12.5rem;
         padding-bottom: 12.5rem;
     }
-    header.masthead .page-heading h1, header.masthead .page-heading .h1,
+
+    header.masthead .page-heading h1,
+    header.masthead .page-heading .h1,
     header.masthead .site-heading h1,
     header.masthead .site-heading .h1 {
         font-size: 5rem;
     }
-    header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+
+    header.masthead .post-heading h1,
+    header.masthead .post-heading .h1 {
         font-size: 3.5rem;
     }
+
     header.masthead .post-heading .subheading {
         font-size: 1.875rem;
     }
 }
+
 #mainNav {
     position: absolute;
     top: 0;
@@ -228,39 +270,50 @@ header.masthead .post-heading .meta a {
     background-color: #fff;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 #mainNav .navbar-brand {
     font-weight: 800;
 }
+
 #mainNav .navbar-toggler {
     font-size: 0.75rem;
     font-weight: 800;
     padding: 0.75rem;
     text-transform: uppercase;
 }
-#mainNav .navbar-nav > li.nav-item > a.nav-link {
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link {
     font-size: 0.75rem;
     font-weight: 800;
     letter-spacing: 0.0625em;
     text-transform: uppercase;
 }
+
 @media (min-width: 992px) {
     #mainNav {
         border-bottom: 1px solid transparent;
         background: transparent;
     }
+
     #mainNav .navbar-brand {
         color: #fff;
     }
-    #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+
+    #mainNav .navbar-brand:focus,
+    #mainNav .navbar-brand:hover {
         color: rgba(255, 255, 255, 0.8);
     }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link {
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link {
         color: #fff;
     }
-    #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
+
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:focus,
+    #mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
         color: rgba(255, 255, 255, 0.8);
     }
 }
+
 @media (min-width: 992px) {
     #mainNav {
         transition: background-color 0.2s;
@@ -269,6 +322,7 @@ header.masthead .post-heading .meta a {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }
+
     #mainNav.is-fixed {
         /* when the user scrolls down, we hide the header right above the viewport */
         position: fixed;
@@ -277,18 +331,25 @@ header.masthead .post-heading .meta a {
         border-bottom: 1px solid white;
         background-color: rgba(255, 255, 255, 0.9);
     }
+
     #mainNav.is-fixed .navbar-brand {
         color: #212529;
     }
-    #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
+
+    #mainNav.is-fixed .navbar-brand:focus,
+    #mainNav.is-fixed .navbar-brand:hover {
         color: #0085A1;
     }
-    #mainNav.is-fixed .navbar-nav > li.nav-item > a {
+
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a {
         color: #212529;
     }
-    #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
+
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,
+    #mainNav.is-fixed .navbar-nav>li.nav-item>a:hover {
         color: #0085A1;
     }
+
     #mainNav.is-visible {
         /* if the user changes the scrolling direction, we show the header */
         transform: translate3d(0, 100%, 0);
