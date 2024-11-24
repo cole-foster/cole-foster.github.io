@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Cole Foster
-subtitle: the developments of me
+title: welcome
 image: /assets/images/sunset.jpeg
 ---
 
