@@ -115,7 +115,7 @@
     column-count:         2;
     }
 }
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     #gallery {
     -moz-column-count:    1;
     -webkit-column-count: 1;
