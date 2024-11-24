@@ -6,7 +6,7 @@ title: stevie tricks
 ---
 
 <!-- want to make images pop-up with Lightbox effect (bootstrap). to do -->
-<ul id="gallery">
+<div id="gallery">
   {% for file in site.static_files %}
     {% if file.path contains '/assets/images/stevie/' %}
       <div class="modern-card">
@@ -16,5 +16,5 @@ title: stevie tricks
       </div>
     {% endif %}
   {% endfor %}
-</ul> 
+</div> 
 

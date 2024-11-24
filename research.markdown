@@ -6,7 +6,7 @@ permalink: /research/
 ---
 
 <div class="wrapper">
-  <ul class="post-list">
+  <div class="post-list">
     {%- for post in site.posts -%}
       {%- if post.categories contains "publications" -%}
         {%- assign date_format = site.minima.date_format | default: "%b %Y" -%}
@@ -24,5 +24,5 @@ permalink: /research/
         </a>
       {%- endif -%}
     {%- endfor -%}
-  </ul>
+  </div>
 </div>
