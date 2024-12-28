@@ -9,7 +9,7 @@ permalink: /research/
   <div class="post-list">
     {%- for post in site.posts -%}
       {%- if post.categories contains "publications" -%}
-        {%- assign date_format = site.minima.date_format | default: "%b %Y" -%}
+        {%- assign date_format = site.minima.date_format | default: "%Y %B" -%}
         <a href="{{ post.url | relative_url }}" class="card-link">
           <div class="modern-card" style="width: 100%;">
               <div class="card-body">

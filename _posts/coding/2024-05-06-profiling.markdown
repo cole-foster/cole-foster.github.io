@@ -1,33 +1,32 @@
 ---
 layout: post
 title:  "What's Taking So Long? Code Profiling for Optimization"
-date: 2024-05-06 11:00:00 -0400
-modified:  2024-05-08 11:00:00 -0400
-categories: coding
+date: 2024-05-06
+modified:  2024-05-06
+categories: writings coding
 usemathjax: true
 ---
 
-The guess-and-check approach to code optimization is tempting but faulty- we are a lot less smart than we think. A 
-better me would tell myself to use a *profiler*, a tool that observes the call stack during the execution of the program
-to record information, *e.g.*, where the program is spending the most time and how often functions are called. This can
-also be used to detect bugs, memory leaks (memory profiler), *etc.*.
+The guess-and-check approach to code optimization is tempting but faulty- a better me would tell myself to use a 
+*profiler*, a tool that observes the call stack during the execution of the program to record information, *e.g.*, 
+where the program is spending the most time and how often functions are called. This can also be used to detect bugs, 
+memory leaks (memory profiler), *etc.*
 
 #### GNU gprof
-The [GNU Profiler](https://ftp.gnu.org/old-gnu/Manuals/gprof-2.9.1/html_mono/gprof.html) 
+The [GNU Profiler](https://ftp.gnu.org/old-gnu/Manuals/gprof-2.9.1/html_mono/gprof.html) is the most basic profiler 
+which pairs directly with gcc.
 
   - Compile with `g++ -g -pg [main.cpp]` where `-g` is for debugging and`-pg` is for the gprof tool.
-  - The code will take longer than normal: will output the executable `./a.out`
-  - Run the executable to output the result and a `.gmon.out` file
-  - Run the gprof command to interpret it and save: `gprof ./a.out gmon.out > test.txt`
-  - The default (above) will create a flat profile, the flag `-q` can be used to create the Call Graph
+  - The code will take longer than normal, and output the executable `a.out`. Run the executable to output the result to
+  output a `.gmon.out` file
+  - Run the gprof command to interpret the file: `gprof ./a.out gmon.out > test.txt`
+  - The default script (above) will create a flat profile, the flag `-q` can be used to create the Call Graph
 
 **Code Optimization:** Without any optimization flags, the code is very transparent, but not identical to a real run- 
 this may make some parts of your code take longer, which skews the analysis. Optimization flags like `-O1, -O2, -O3`
 greatly speed up the program, but can also jumble up the code leading to an erroneous analysis. This was observed with
 the `-O2` flag, where unrelated functions were said to be called. The `-O1` flag seems to be a good middle ground for 
 speed and clarity. 
-
-<p style="text-align: center; color: red;"> Note to self: understand how this optimization works, inline stuff.</p>
 
 **Visualizing the Call Graph:**
 The call graph gives information about the call stack throughout the program. Below, we see an example: the `main()` 
