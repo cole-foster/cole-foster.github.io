@@ -12,16 +12,16 @@ used is far from incidental. In fact, it's spot on: life is a search. A search f
 version of yourself, a search for a better situation for your family. There is some place you are at, and some place else 
 you would like to be. Your destiny. But searching in the high-dimensional space of life is not an easy task. 
 
-<p align="center">
-  <img src="/assets/images/life/orientation-im1.png" alt="life as a graph" width="600" height="400">
-</p>
+<div align="center">
+  <img src="/assets/images/life/orientation-im1.png" alt="life as a graph" style="max-height: 200px">
+</div>
 
 The space of life can be discretized down to the moments of action. Actions are the building blocks of life, they are forces
 which have the power to invoke change. Change in your position in the graph of life. Every action is the manifestation of a decision, either purposeful or unconscious. Even inaction is a decision, moving you to a new node, with potentially fewer options. If you can graph life as a series of actions, with the potential to invoke change, then you can understand that all actions have power. 
 
-<p align="center">
-  <img src="/assets/images/life/orientation-path.png" alt="paths to choose from" width="600" height="400">
-</p>
+<div align="center">
+  <img src="/assets/images/life/orientation-path.png" alt="paths to choose from" style="max-height: 200px">
+</div>
 
 In each waking moment, you have the power to choose. In the directed graph of life, with high degree, you have many options to choose from: 
 - to binge that tv show
@@ -39,9 +39,9 @@ This search requires an implicit sense direction in the space of life. A compass
 decision were be weighted equally, choices would be left to chance, resulting in a depth first exploration of life without a visited list, capable of getting stuck in cycles. Similarly, life is too complex to be explored breadth-first: the graph
 degree is too high. 
 
-<p align="center">
-  <img src="/assets/images/life/orientation-im2.png" alt="your query" width="600" height="400">
-</p>
+<div align="center">
+  <img src="/assets/images/life/orientation-im2.png" alt="your query" style="max-height: 200px">
+</div>
 
 Life is a best-first search, guided by an implicit query: what you are searching for. At each step along this path of
 life, you make the decision which best leads you to this query. And the query is hand-crafted by you: it's

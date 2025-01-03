@@ -46,10 +46,12 @@ image: /assets/images/sunset.jpeg
                         <div class="modern-card" style="width: 100%;">
                             <div class="card-body">
                                 <h5 class="card-title">{{ post.title | escape }}</h5>
+                                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                                <span class="post-meta">{{ post.date | date: date_format }}</span>
                                 {%- if post.description -%}
                                     <p class="card-text"> {{ post.description }}</p>
                                 {%- endif -%}    
-                                <img class="center" style="display:block; margin-left: auto; max-width: 100%; margin-right: auto; max-height: 200px;" src="{{ post.image }}">
+                                <!-- <img class="center" style="display:block; margin-left: auto; max-width: 100%; margin-right: auto; max-height: 200px;" src="{{ post.image }}"> -->
                             </div>
                         </div>
                     </a>
