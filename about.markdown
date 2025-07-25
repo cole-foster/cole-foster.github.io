@@ -15,13 +15,19 @@ image: /assets/images/sunset.jpeg
                 </div>
                 <!-- description -->
                 <div class="col-md-7">
-                    <p>Welcome!</p>
+                    <p>Hi there! </p>
                     <p>
-                        <b>Academically</b>, I'm a PhD Candidate at Brown University studying under Professor Kimia within 
-                        the Department of Electrical and Computer Engineering. I received my Masters of Science in 
-                        Electrical and Computer Engineering at Brown University in 2024. I received my undergraduate 
-                        degree in 2020 at Roger Williams University majoring in Electrical Engineering and Applied 
-                        Mathematics.
+                    I am a researcher in Similarity Search, focused on designing algorithms for accurate and efficient 
+                    retrieval on large, high-dimensional datasets. My particular research topics:
+                    <ul>
+                        <li> Search on massive-scale datasets </li>
+                        <li> Parallelization strategies for multi-core CPUs and GPUs </li>
+                        <li> Design and construction of proximity graphs at scale </li>
+                        <li> Applications of similarity search and of databases organized by proximity graphs</li>
+                    </ul>
+                    I am currently a PhD Candidate at Brown University studying under Professor Kimia in 
+                    the Department of Electrical and Computer Engineering (ECE). I received my Masters of Science at Brown 
+                    in 2024 and my undergraduate degree at Roger Williams University in 2020.
                     </p>
                 </div>
             </div>
