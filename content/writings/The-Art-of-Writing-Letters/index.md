@@ -3,7 +3,7 @@ layout: post
 title:  "The Art of Writing Letters"
 date: 2025-01-02
 modified:  2025-01-02
-image: ./writings/The-Art-of-Writing-Letters/stevie-grandma.jpeg
+image: ./writings/the-art-of-writing-letters/stevie-grandma.jpeg
 showtoc: false
 tags:
   - life
