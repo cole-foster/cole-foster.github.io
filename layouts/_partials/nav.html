@@ -13,7 +13,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+        <a class="navbar-brand" href="{{ " /" | relLangURL }}">{{ .Site.Title }}</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,12 +26,12 @@
         <div class="navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="{{ "/" | relLangURL }}">About Me</a>
+              <a href="{{ " /" | relLangURL }}">About Me</a>
             </li>
             {{ if not .Site.Params.omit_categories }}
             {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
             <li>
-              <a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}/">{{ $name }}</a>
+              <a href="{{ " categories/" | relLangURL }}{{ $name | urlize }}/">{{ $name }}</a>
             </li>
             {{ end }}
             {{ end }}
@@ -41,9 +41,9 @@
             {{ end }}
 
             <li>
-              <a href="{{ "stevie" | relURL }}" title="Stevie"><i class="fa fa-paw"></i></a>
+              <a href="{{ " stevie" | relURL }}" title="Stevie"><i class="fa fa-paw"></i></a>
             </li>
-            
+
             {{ if not (eq .Site.Params.dark_mode_toggle false) }}
             <li>
               <a href="#" id="theme-toggle" title="Toggle dark mode" style="opacity: 0;">
