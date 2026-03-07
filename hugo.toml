@@ -21,6 +21,8 @@ home = ["HTML", "RSS"]
   slogan = ""
   upstreamAttribution = true
 
+  #favicon = "img/favicon.ico"
+
   image_404 = "img/404-bg.jpg"
   title_404 = "whatever it is, it isn't here :/"
   omit_categories = false
