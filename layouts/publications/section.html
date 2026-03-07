@@ -1,0 +1,96 @@
+{{ define "header" }}
+<header class="intro-header" style="background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL }}{{ end }}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading">
+          <h1>{{ .Title }}</h1>
+          {{ with .Description }}<span class="subheading">{{ . }}</span>{{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+        <!-- content within the index file -->
+        {{ .Content }}
+
+        <hr>
+
+        <!-- List all the writing posts, by date -->
+        {{ range .RegularPages.ByDate.Reverse }}
+        <div class="post-preview">
+          <a href="{{ .RelPermalink }}">
+            <h2 class="post-title">{{ .Title }}</h2>
+            {{ with .Description }}
+            <h3 class="post-subtitle">{{ . }}</h3>
+            {{ else }}
+            <h3 class="post-subtitle">{{ .Summary }}</h3>
+            {{ end }}
+          </a>
+          <p class="post-meta">
+            Posted on {{ .Date.Format "January 2, 2006" }}
+          </p>
+        </div>
+        <hr>
+        {{ end }}
+
+
+        {{ partial "comments.html" . }}
+      </div>
+      
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        {{ if .Site.Params.featured_tags }}
+        <section>
+          <hr class="hidden-sm hidden-xs">
+          <h5><a href="/tags/">FEATURED TAGS</a></h5>
+          <div class="tags">
+            {{ $featured_condition_size := .Site.Params.featured_condition_size }}
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
+            <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">
+              {{ $name }}
+            </a>
+            {{ end }}
+            {{ end }}
+          </div>
+        </section>
+        {{ end }}
+
+        <!-- Friends Blog -->
+        {{ if .Site.Params.friends }}
+        <section>
+          <hr>
+          <h5>FRIENDS</h5>
+          <ul class="list-inline">
+            {{ range .Site.Params.friend_link }}
+            <li><a target="_blank" href="{{.href}}">{{.title}}</a></li>
+            {{ end }}
+          </ul>
+        </section>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</article>
+
+{{ end }}

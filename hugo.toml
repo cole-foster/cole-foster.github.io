@@ -1,0 +1,85 @@
+baseURL = 'cole-foster.com'
+languageCode = 'en-us'
+title = 'Cole Foster'
+theme = "hugo-theme-cleanwhite"
+
+# all from template below
+preserveTaxonomyNames = true
+hasCJKLanguage = true
+
+[pagination]
+  pagerSize = 5 # frontpage pagination
+
+[outputs]
+home = ["HTML", "RSS"] 
+
+[params]
+  header_image = "img/sunset.jpeg"
+  SEOTitle = "Cole Foster"
+  description = "The ramblings of Cole Foster."
+  keyword = "similarity search"
+  slogan = ""
+  upstreamAttribution = true
+
+  image_404 = "img/404-bg.jpg"
+  title_404 = "whatever it is, it isn't here :/"
+  omit_categories = false
+
+  # Sidebar settings
+  sidebar_about_description = "" #"Lover of Long Walks on the Beach"
+  sidebar_avatar = "img/stevie-and-me.png"      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+  featured_tags = false 
+  featured_condition_size = 1 
+
+  friends = false
+  bookmarks = false
+  about_me = true
+
+  # Dark mode configuration
+  auto_theme = true          # Enable automatic theme switching based on sunrise/sunset
+  dark_mode_toggle = true    # Enable dark mode toggle button in navbar
+
+  # Include any custom CSS and/or JS files, url or relative to /static folder
+  custom_css = ["css/custom-gallery.css"]
+  #custom_js = ["js/lightbox.js", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js", "js/main.js"]
+
+  [params.social]
+  rss            = false 
+  email          = "cole_foster at brown.edu"
+  linkedin       = "https://www.linkedin.com/in/cole-foster-750424244/"
+  github         = "https://github.com/cole-foster/"
+  
+
+  [[params.bookmark_link]]
+  title =  "Martin Fowler"
+  href =  "https://martinfowler.com"
+  [[params.bookmark_link]]
+  title = "ServiceMesher"
+  href =  "http://www.servicemesher.com"
+  [[params.bookmark_link]]
+  title =  "Pxhere"
+  href = "https://pxhere.com"
+  [[params.bookmark_link]]
+  title = "unsplash"
+  href = "https://unsplash.com"
+  
+  [[params.additional_menus]]
+  title =  "PUBLICATIONS"
+  href =  "/publications/"
+  [[params.additional_menus]]
+  title =  "WRITINGS"
+  href =  "/writings/"
+  #[[params.additional_menus]]
+  #title =  "ABOUT"
+  #href =  "/about/"
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 2
+    startLevel = 1
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,14 @@
+/* .gallery {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+  gap: 12px !important;
+  max-width: 1400px;
+  margin: 40px auto !important;
+}
+
+.gallery .box {
+  width: auto !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+} */

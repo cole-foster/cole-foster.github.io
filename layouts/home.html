@@ -1,0 +1,37 @@
+{{ define "header" }}
+<header class="intro-header" style="background-image: url('{{ if .Params.image }}{{ .Params.image | relURL }}{{ else }}{{ .Site.Params.header_image | relURL }}{{ end }}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading">
+          <h1>{{ .Title }}</h1>
+          {{ with .Description }}<span class="subheading">{{ . }}</span>{{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<!-- Post Content -->
+<div data-pagefind-ignore="all" class="container">
+  <div class="row">
+    <!-- USE SIDEBAR -->
+
+    <!-- Post Container -->
+    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+
+      {{ .Content }}
+    </div>
+    {{ partial "sidebar.html" . }}
+  </div>
+</div>
+
+{{ end }}
