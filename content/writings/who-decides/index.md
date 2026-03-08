@@ -41,5 +41,5 @@ For we are her new heartbeat.  <br>
 </div>
 
 
-Written in loving memory of my grandmother, Menghi, Jean Handren Lefebvre.
+Written in loving memory of my grandmother, Menghi.
 
