@@ -39,7 +39,7 @@
                             {{ else }}
                                     {{ .Site.Title }}
                             {{ end }}  -->
-                            Written on 
+                            <!-- Written on  -->
                             {{ .Date.Format "Monday, January 2, 2006" }}
                             {{ if .Site.Params.page_view_counter }}
                                 {{ partial "page_view_counter.html" . }}
@@ -89,13 +89,13 @@
                     {{ if .PrevInSection }}
                     <li class="previous">
                         <a href="{{ .PrevInSection.RelPermalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title}}">&larr;
-                            Previous Post</a>
+                            Previous Writing</a>
                     </li>
                     {{ end }}
                     {{ if .NextInSection }}
                     <li class="next">
                         <a href="{{ .NextInSection.RelPermalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title}}">Next
-                            Post &rarr;</a>
+                            Writing &rarr;</a>
                     </li>
                     {{ end }}
                 </ul>
