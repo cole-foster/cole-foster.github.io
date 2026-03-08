@@ -23,8 +23,8 @@ home = ["HTML", "RSS"]
 
   #favicon = "img/favicon.ico"
 
-  image_404 = "img/404-bg.jpg"
-  title_404 = "whatever it is, it isn't here :/"
+  image_404 = "img/stevie/stevie-hood.jpeg"
+  title_404 = "You shouldn't be here..."
   omit_categories = false
 
   # Sidebar settings
