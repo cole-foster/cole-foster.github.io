@@ -15,14 +15,12 @@
 
 {{ define "main" }}
 <!-- Post Content -->
-<div data-pagefind-ignore="all" class="container">
+<div data-pagefind-ignore="all" class="container home-page">
   <div class="row">
-    <!-- USE SIDEBAR -->
-
     <!-- Post Container -->
     <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
+            col-lg-12
+            col-md-12
             col-sm-12
             col-xs-12
             post-container
@@ -30,7 +28,6 @@
 
       {{ .Content }}
     </div>
-    {{ partial "sidebar.html" . }}
   </div>
 </div>
 

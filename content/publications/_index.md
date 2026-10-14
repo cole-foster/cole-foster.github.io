@@ -1,4 +1,4 @@
 ---
-title: "Research Publications"
+title: "publications"
 layout: section
 ---
